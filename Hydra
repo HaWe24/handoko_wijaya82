@@ -1,0 +1,500 @@
+
+;ELC
+;;; Compiled
+;;; in Emacs version 26.2
+;;; with all optimizations.
+
+;;; This file uses dynamic docstrings, first added in Emacs 19.29.
+
+;;; This file does not contain utf-8 non-ASCII characters,
+;;; and so can be loaded in Emacs versions earlier than 23.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+(byte-code "\300\301!\210\300\302!\207" [require hydra org] 2)
+#@23 Export only the body.
+(defvar hydra-ox/body-only nil (#$ . 471))
+(put 'hydra-ox/body-only 'range [nil t])
+(defalias 'hydra-ox/body-only #[nil "\300\301!\207" [hydra--cycle-radio hydra-ox/body-only] 2])
+#@15 Export scope.
+(defvar hydra-ox/export-scope 'buffer (#$ . 679))
+(put 'hydra-ox/export-scope 'range [buffer subtree])
+(defalias 'hydra-ox/export-scope #[nil "\300\301!\207" [hydra--cycle-radio hydra-ox/export-scope] 2])
+#@29 When non-nil, export async.
+(defvar hydra-ox/async-export nil (#$ . 904))
+(put 'hydra-ox/async-export 'range [nil t])
+(defalias 'hydra-ox/async-export #[nil "\300\301!\207" [hydra--cycle-radio hydra-ox/async-export] 2])
+#@35 When non-nil, export visible only
+(defvar hydra-ox/visible-only nil (#$ . 1130))
+(put 'hydra-ox/visible-only 'range [nil t])
+(defalias 'hydra-ox/visible-only #[nil "\300\301!\207" [hydra--cycle-radio hydra-ox/visible-only] 2])
+#@25 Toggle force publishing
+(defvar hydra-ox/force-publishing nil (#$ . 1363))
+(put 'hydra-ox/force-publishing 'range [nil t])
+(defalias 'hydra-ox/force-publishing #[nil "\300\301!\207" [hydra--cycle-radio hydra-ox/force-publishing] 2])
+(defvar hydra-ox/names '(hydra-ox/body-only hydra-ox/export-scope hydra-ox/async-export hydra-ox/visible-only hydra-ox/force-publishing))
+(byte-code "\300\301!\302L\210\303\301!\304L\210\305\301!\306L\210\307\301!\310L\210\311\301!\312L\207" [(lambda (#1=#:def-tmp-var) (defvar hydra-ox-html/params #1# "Params of hydra-ox-html.")) nil (nil nil :exit t :foreign-keys nil) (lambda (#1#) (defvar hydra-ox-html/docstring #1# "Docstring of hydra-ox-html.")) "ox-html" (lambda (#1#) (defvar hydra-ox-html/heads #1# "Heads for hydra-ox-html.")) (("H" (org-html-export-as-html hydra-ox/async-export (eq hydra-ox/export-scope 'subtree) hydra-ox/visible-only hydra-ox/body-only) "As HTML buffer" :exit t) ("h" (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope 'subtree) hydra-ox/visible-only hydra-ox/body-only) "As HTML file" :exit t) ("o" (org-open-file (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope 'subtree) hydra-ox/visible-only hydra-ox/body-only)) "As HTML file and open" :exit t) ("b" hydra-ox/body "back" :exit t) ("q" nil "quit" :exit t)) (lambda (#1#) (defvar hydra-ox-html/keymap #1# "Keymap for hydra-ox-html.")) (keymap (113 . hydra-ox-html/nil) (98 . hydra-ox-html/hydra-ox/body-and-exit) (111 . hydra-ox-html/lambda-o-and-exit) (104 . hydra-ox-html/lambda-h-and-exit) (72 . hydra-ox-html/lambda-H-and-exit) (kp-subtract . hydra--negative-argument) (kp-9 . hydra--digit-argument) (kp-8 . hydra--digit-argument) (kp-7 . hydra--digit-argument) (kp-6 . hydra--digit-argument) (kp-5 . hydra--digit-argument) (kp-4 . hydra--digit-argument) (kp-3 . hydra--digit-argument) (kp-2 . hydra--digit-argument) (kp-1 . hydra--digit-argument) (kp-0 . hydra--digit-argument) (57 . hydra--digit-argument) (56 . hydra--digit-argument) (55 . hydra--digit-argument) (54 . hydra--digit-argument) (53 . hydra--digit-argument) (52 . hydra--digit-argument) (51 . hydra--digit-argument) (50 . hydra--digit-argument) (49 . hydra--digit-argument) (48 . hydra--digit-argument) (45 . hydra--negative-argument) (21 . hydra--universal-argument)) (lambda (#1#) (defvar hydra-ox-html/hint #1# "Dynamic hint for hydra-ox-html.")) (format #("ox-html: [H]: As HTML buffer, [h]: As HTML file, [o]: As HTML file and open, [b]: back, [q]: quit." 10 11 (face hydra-face-blue) 31 32 (face hydra-face-blue) 50 51 (face hydra-face-blue) 78 79 (face hydra-face-blue) 89 90 (face hydra-face-blue)))] 2)
+#@757 Call the head `(org-html-export-as-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)' in the "hydra-ox-html" hydra.
+
+The heads for the associated hydra are:
+
+"H":    `(org-html-export-as-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"h":    `(org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"o":    `(org-open-file (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-html/body'.
+(defalias 'hydra-ox-html/lambda-H-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-html/body hydra--call-interactively-remap-maybe #[nil "\304	\305=\n$\207" [hydra-ox/async-export hydra-ox/export-scope hydra-ox/visible-only hydra-ox/body-only org-html-export-as-html subtree] 5 nil nil]] 2 (#$ . 4017) nil])
+#@757 Call the head `(org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)' in the "hydra-ox-html" hydra.
+
+The heads for the associated hydra are:
+
+"H":    `(org-html-export-as-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"h":    `(org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"o":    `(org-open-file (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-html/body'.
+(defalias 'hydra-ox-html/lambda-h-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-html/body hydra--call-interactively-remap-maybe #[nil "\304	\305=\n$\207" [hydra-ox/async-export hydra-ox/export-scope hydra-ox/visible-only hydra-ox/body-only org-html-export-to-html subtree] 5 nil nil]] 2 (#$ . 5189) nil])
+#@773 Call the head `(org-open-file (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only))' in the "hydra-ox-html" hydra.
+
+The heads for the associated hydra are:
+
+"H":    `(org-html-export-as-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"h":    `(org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"o":    `(org-open-file (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-html/body'.
+(defalias 'hydra-ox-html/lambda-o-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-html/body hydra--call-interactively-remap-maybe #[nil "\304\305	\306=\n$!\207" [hydra-ox/async-export hydra-ox/export-scope hydra-ox/visible-only hydra-ox/body-only org-open-file org-html-export-to-html subtree] 6 nil nil]] 2 (#$ . 6361) nil])
+#@639 Call the head `hydra-ox/body' in the "hydra-ox-html" hydra.
+
+The heads for the associated hydra are:
+
+"H":    `(org-html-export-as-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"h":    `(org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"o":    `(org-open-file (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-html/body'.
+(defalias 'hydra-ox-html/hydra-ox/body-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-html/body hydra-ox/body hydra--call-interactively-remap-maybe] 2 (#$ . 7568) nil])
+#@629 Call the head `nil' in the "hydra-ox-html" hydra.
+
+The heads for the associated hydra are:
+
+"H":    `(org-html-export-as-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"h":    `(org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"o":    `(org-open-file (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-html/body'.
+(defalias 'hydra-ox-html/nil #[nil "\301\302!\210\303 \210\304 \210\305\211\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-html/body] 2 (#$ . 8501) nil])
+#@623 Call the body in the "hydra-ox-html" hydra.
+
+The heads for the associated hydra are:
+
+"H":    `(org-html-export-as-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"h":    `(org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only)',
+"o":    `(org-open-file (org-html-export-to-html hydra-ox/async-export (eq hydra-ox/export-scope (quote subtree)) hydra-ox/visible-only hydra-ox/body-only))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-html/body'.
+(defalias 'hydra-ox-html/body #[nil "\306\307!\210\310 \210\311\312 \210\313)\314\n\315\"\210\316\317\311#\210\f\211\207" [hydra--ignore hydra-curr-body-fn hydra-ox-html/hint hydra-ox-html/keymap current-prefix-arg prefix-arg require hydra hydra-default-pre nil hydra-keyboard-quit hydra-ox-html/body hydra-show-hint hydra-ox-html hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1]] 4 (#$ . 9330) nil])
+(byte-code "\300\301!\302L\210\303\301!\304L\210\305\301!\306L\210\307\301!\310L\210\311\301!\312L\207" [(lambda (#1=#:def-tmp-var) (defvar hydra-ox-latex/params #1# "Params of hydra-ox-latex.")) nil (nil nil :exit t :foreign-keys nil) (lambda (#1#) (defvar hydra-ox-latex/docstring #1# "Docstring of hydra-ox-latex.")) "ox-latex" (lambda (#1#) (defvar hydra-ox-latex/heads #1# "Heads for hydra-ox-latex.")) (("L" org-latex-export-as-latex "As LaTeX buffer" :exit t) ("l" org-latex-export-to-latex "As LaTeX file" :exit t) ("p" org-latex-export-to-pdf "As PDF file" :exit t) ("o" (org-open-file (org-latex-export-to-pdf)) "As PDF file and open" :exit t) ("b" hydra-ox/body "back" :exit t) ("q" nil "quit" :exit t)) (lambda (#1#) (defvar hydra-ox-latex/keymap #1# "Keymap for hydra-ox-latex.")) (keymap (113 . hydra-ox-latex/nil) (98 . hydra-ox-latex/hydra-ox/body-and-exit) (111 . hydra-ox-latex/lambda-o-and-exit) (112 . hydra-ox-latex/org-latex-export-to-pdf-and-exit) (108 . hydra-ox-latex/org-latex-export-to-latex-and-exit) (76 . hydra-ox-latex/org-latex-export-as-latex-and-exit) (kp-subtract . hydra--negative-argument) (kp-9 . hydra--digit-argument) (kp-8 . hydra--digit-argument) (kp-7 . hydra--digit-argument) (kp-6 . hydra--digit-argument) (kp-5 . hydra--digit-argument) (kp-4 . hydra--digit-argument) (kp-3 . hydra--digit-argument) (kp-2 . hydra--digit-argument) (kp-1 . hydra--digit-argument) (kp-0 . hydra--digit-argument) (57 . hydra--digit-argument) (56 . hydra--digit-argument) (55 . hydra--digit-argument) (54 . hydra--digit-argument) (53 . hydra--digit-argument) (52 . hydra--digit-argument) (51 . hydra--digit-argument) (50 . hydra--digit-argument) (49 . hydra--digit-argument) (48 . hydra--digit-argument) (45 . hydra--negative-argument) (21 . hydra--universal-argument)) (lambda (#1#) (defvar hydra-ox-latex/hint #1# "Dynamic hint for hydra-ox-latex.")) (format #("ox-latex: [L]: As LaTeX buffer, [l]: As LaTeX file, [p]: As PDF file, [o]: As PDF file and open, [b]: back, [q]: quit." 11 12 (face hydra-face-blue) 33 34 (face hydra-face-blue) 53 54 (face hydra-face-blue) 71 72 (face hydra-face-blue) 98 99 (face hydra-face-blue) 109 110 (face hydra-face-blue)))] 2)
+#@370 Call the head `org-latex-export-as-latex' in the "hydra-ox-latex" hydra.
+
+The heads for the associated hydra are:
+
+"L":    `org-latex-export-as-latex',
+"l":    `org-latex-export-to-latex',
+"p":    `org-latex-export-to-pdf',
+"o":    `(org-open-file (org-latex-export-to-pdf))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-latex/body'.
+(defalias 'hydra-ox-latex/org-latex-export-as-latex-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-latex/body org-latex-export-as-latex hydra--call-interactively-remap-maybe] 2 (#$ . 12583) nil])
+#@370 Call the head `org-latex-export-to-latex' in the "hydra-ox-latex" hydra.
+
+The heads for the associated hydra are:
+
+"L":    `org-latex-export-as-latex',
+"l":    `org-latex-export-to-latex',
+"p":    `org-latex-export-to-pdf',
+"o":    `(org-open-file (org-latex-export-to-pdf))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-latex/body'.
+(defalias 'hydra-ox-latex/org-latex-export-to-latex-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-latex/body org-latex-export-to-latex hydra--call-interactively-remap-maybe] 2 (#$ . 13274) nil])
+#@368 Call the head `org-latex-export-to-pdf' in the "hydra-ox-latex" hydra.
+
+The heads for the associated hydra are:
+
+"L":    `org-latex-export-as-latex',
+"l":    `org-latex-export-to-latex',
+"p":    `org-latex-export-to-pdf',
+"o":    `(org-open-file (org-latex-export-to-pdf))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-latex/body'.
+(defalias 'hydra-ox-latex/org-latex-export-to-pdf-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-latex/body org-latex-export-to-pdf hydra--call-interactively-remap-maybe] 2 (#$ . 13965) nil])
+#@386 Call the head `(org-open-file (org-latex-export-to-pdf))' in the "hydra-ox-latex" hydra.
+
+The heads for the associated hydra are:
+
+"L":    `org-latex-export-as-latex',
+"l":    `org-latex-export-to-latex',
+"p":    `org-latex-export-to-pdf',
+"o":    `(org-open-file (org-latex-export-to-pdf))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-latex/body'.
+(defalias 'hydra-ox-latex/lambda-o-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-latex/body hydra--call-interactively-remap-maybe #[nil "\300\301 !\207" [org-open-file org-latex-export-to-pdf] 2 nil nil]] 2 (#$ . 14650) nil])
+#@358 Call the head `hydra-ox/body' in the "hydra-ox-latex" hydra.
+
+The heads for the associated hydra are:
+
+"L":    `org-latex-export-as-latex',
+"l":    `org-latex-export-to-latex',
+"p":    `org-latex-export-to-pdf',
+"o":    `(org-open-file (org-latex-export-to-pdf))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-latex/body'.
+(defalias 'hydra-ox-latex/hydra-ox/body-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-latex/body hydra-ox/body hydra--call-interactively-remap-maybe] 2 (#$ . 15370) nil])
+#@348 Call the head `nil' in the "hydra-ox-latex" hydra.
+
+The heads for the associated hydra are:
+
+"L":    `org-latex-export-as-latex',
+"l":    `org-latex-export-to-latex',
+"p":    `org-latex-export-to-pdf',
+"o":    `(org-open-file (org-latex-export-to-pdf))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-latex/body'.
+(defalias 'hydra-ox-latex/nil #[nil "\301\302!\210\303 \210\304 \210\305\211\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-latex/body] 2 (#$ . 16025) nil])
+#@342 Call the body in the "hydra-ox-latex" hydra.
+
+The heads for the associated hydra are:
+
+"L":    `org-latex-export-as-latex',
+"l":    `org-latex-export-to-latex',
+"p":    `org-latex-export-to-pdf',
+"o":    `(org-open-file (org-latex-export-to-pdf))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-latex/body'.
+(defalias 'hydra-ox-latex/body #[nil "\306\307!\210\310 \210\311\312 \210\313)\314\n\315\"\210\316\317\311#\210\f\211\207" [hydra--ignore hydra-curr-body-fn hydra-ox-latex/hint hydra-ox-latex/keymap current-prefix-arg prefix-arg require hydra hydra-default-pre nil hydra-keyboard-quit hydra-ox-latex/body hydra-show-hint hydra-ox-latex hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1]] 4 (#$ . 16576) nil])
+(byte-code "\300\301!\302L\210\303\301!\304L\210\305\301!\306L\210\307\301!\310L\210\311\301!\312L\207" [(lambda (#1=#:def-tmp-var) (defvar hydra-ox-text/params #1# "Params of hydra-ox-text.")) nil (nil nil :exit t :foreign-keys nil) (lambda (#1#) (defvar hydra-ox-text/docstring #1# "Docstring of hydra-ox-text.")) "ox-text" (lambda (#1#) (defvar hydra-ox-text/heads #1# "Heads for hydra-ox-text.")) (("A" (org-ascii-export-as-ascii nil nil nil nil '(:ascii-charset ascii)) "As ASCII buffer" :exit t) ("a" (org-ascii-export-to-ascii nil nil nil nil '(:ascii-charset ascii)) "As ASCII file" :exit t) ("L" (org-ascii-export-as-ascii nil nil nil nil '(:ascii-charset latin1)) "As Latin1 buffer" :exit t) ("l" (org-ascii-export-to-ascii nil nil nil nil '(:ascii-charset latin1)) "As Latin1 file" :exit t) ("U" (org-ascii-export-as-ascii nil nil nil nil '(:ascii-charset utf-8)) "As UTF-8 buffer" :exit t) ("u" (org-ascii-export-to-ascii nil nil nil nil '(:ascii-charset utf-8)) "As UTF-8 file" :exit t) ("b" hydra-ox/body "back" :exit t) ("q" nil "quit" :exit t)) (lambda (#1#) (defvar hydra-ox-text/keymap #1# "Keymap for hydra-ox-text.")) (keymap (113 . hydra-ox-text/nil) (98 . hydra-ox-text/hydra-ox/body-and-exit) (117 . hydra-ox-text/lambda-u-and-exit) (85 . hydra-ox-text/lambda-U-and-exit) (108 . hydra-ox-text/lambda-l-and-exit) (76 . hydra-ox-text/lambda-L-and-exit) (97 . hydra-ox-text/lambda-a-and-exit) (65 . hydra-ox-text/lambda-A-and-exit) (kp-subtract . hydra--negative-argument) (kp-9 . hydra--digit-argument) (kp-8 . hydra--digit-argument) (kp-7 . hydra--digit-argument) (kp-6 . hydra--digit-argument) (kp-5 . hydra--digit-argument) (kp-4 . hydra--digit-argument) (kp-3 . hydra--digit-argument) (kp-2 . hydra--digit-argument) (kp-1 . hydra--digit-argument) (kp-0 . hydra--digit-argument) (57 . hydra--digit-argument) (56 . hydra--digit-argument) (55 . hydra--digit-argument) (54 . hydra--digit-argument) (53 . hydra--digit-argument) (52 . hydra--digit-argument) (51 . hydra--digit-argument) (50 . hydra--digit-argument) (49 . hydra--digit-argument) (48 . hydra--digit-argument) (45 . hydra--negative-argument) (21 . hydra--universal-argument)) (lambda (#1#) (defvar hydra-ox-text/hint #1# "Dynamic hint for hydra-ox-text.")) (format #("ox-text: [A]: As ASCII buffer, [a]: As ASCII file, [L]: As Latin1 buffer, [l]: As Latin1 file, [U]: As UTF-8 buffer, [u]: As UTF-8 file, [b]: back, [q]: quit." 10 11 (face hydra-face-blue) 32 33 (face hydra-face-blue) 52 53 (face hydra-face-blue) 75 76 (face hydra-face-blue) 96 97 (face hydra-face-blue) 118 119 (face hydra-face-blue) 138 139 (face hydra-face-blue) 149 150 (face hydra-face-blue)))] 2)
+#@773 Call the head `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))' in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/lambda-A-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-text/body hydra--call-interactively-remap-maybe #[nil "\300\301\211\211\211\302%\207" [org-ascii-export-as-ascii nil (:ascii-charset ascii)] 6 nil nil]] 2 (#$ . 20020) nil])
+#@773 Call the head `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))' in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/lambda-a-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-text/body hydra--call-interactively-remap-maybe #[nil "\300\301\211\211\211\302%\207" [org-ascii-export-to-ascii nil (:ascii-charset ascii)] 6 nil nil]] 2 (#$ . 21155) nil])
+#@774 Call the head `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))' in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/lambda-L-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-text/body hydra--call-interactively-remap-maybe #[nil "\300\301\211\211\211\302%\207" [org-ascii-export-as-ascii nil (:ascii-charset latin1)] 6 nil nil]] 2 (#$ . 22290) nil])
+#@774 Call the head `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))' in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/lambda-l-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-text/body hydra--call-interactively-remap-maybe #[nil "\300\301\211\211\211\302%\207" [org-ascii-export-to-ascii nil (:ascii-charset latin1)] 6 nil nil]] 2 (#$ . 23427) nil])
+#@773 Call the head `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))' in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/lambda-U-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-text/body hydra--call-interactively-remap-maybe #[nil "\300\301\211\211\211\302%\207" [org-ascii-export-as-ascii nil (:ascii-charset utf-8)] 6 nil nil]] 2 (#$ . 24564) nil])
+#@773 Call the head `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))' in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/lambda-u-and-exit #[nil "\301\302!\210\303 \210\304 \210\305\306\307!\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-text/body hydra--call-interactively-remap-maybe #[nil "\300\301\211\211\211\302%\207" [org-ascii-export-to-ascii nil (:ascii-charset utf-8)] 6 nil nil]] 2 (#$ . 25699) nil])
+#@712 Call the head `hydra-ox/body' in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/hydra-ox/body-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-text/body hydra-ox/body hydra--call-interactively-remap-maybe] 2 (#$ . 26834) nil])
+#@702 Call the head `nil' in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/nil #[nil "\301\302!\210\303 \210\304 \210\305\211\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox-text/body] 2 (#$ . 27841) nil])
+#@696 Call the body in the "hydra-ox-text" hydra.
+
+The heads for the associated hydra are:
+
+"A":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"a":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset ascii)))',
+"L":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"l":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset latin1)))',
+"U":    `(org-ascii-export-as-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"u":    `(org-ascii-export-to-ascii nil nil nil nil (quote (:ascii-charset utf-8)))',
+"b":    `hydra-ox/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox-text/body'.
+(defalias 'hydra-ox-text/body #[nil "\306\307!\210\310 \210\311\312 \210\313)\314\n\315\"\210\316\317\311#\210\f\211\207" [hydra--ignore hydra-curr-body-fn hydra-ox-text/hint hydra-ox-text/keymap current-prefix-arg prefix-arg require hydra hydra-default-pre nil hydra-keyboard-quit hydra-ox-text/body hydra-show-hint hydra-ox-text hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1]] 4 (#$ . 28744) nil])
+(byte-code "\300\301!\302L\210\303\301!\304L\210\305\301!\306L\210\307\301!\310L\210\311\301!\312L\207" [(lambda (#1=#:def-tmp-var) (defvar hydra-ox/params #1# "Params of hydra-ox.")) nil (nil nil) (lambda (#1#) (defvar hydra-ox/docstring #1# "Docstring of hydra-ox.")) "\n_C-b_ Body only:    % -15`hydra-ox/body-only^^^ _C-v_ Visible only:     %`hydra-ox/visible-only\n_C-s_ Export scope: % -15`hydra-ox/export-scope _C-f_ Force publishing: %`hydra-ox/force-publishing\n_C-a_ Async export: %`hydra-ox/async-export\n\n" (lambda (#1#) (defvar hydra-ox/heads #1# "Heads for hydra-ox.")) (("C-b" (hydra-ox/body-only) nil :exit nil) ("C-v" (hydra-ox/visible-only) nil :exit nil) ("C-s" (hydra-ox/export-scope) nil :exit nil) ("C-f" (hydra-ox/force-publishing) nil :exit nil) ("C-a" (hydra-ox/async-export) nil :exit nil) ("h" hydra-ox-html/body "Export to HTML" :exit t) ("l" hydra-ox-latex/body "Export to LaTeX" :exit t) ("t" hydra-ox-text/body "Export to Plain Text" :exit t) ("q" nil "quit" :exit t)) (lambda (#1#) (defvar hydra-ox/keymap #1# "Keymap for hydra-ox.")) (keymap (113 . hydra-ox/nil) (116 . hydra-ox/hydra-ox-text/body-and-exit) (108 . hydra-ox/hydra-ox-latex/body-and-exit) (104 . hydra-ox/hydra-ox-html/body-and-exit) (1 . hydra-ox/lambda-C-a) (6 . hydra-ox/lambda-C-f) (19 . hydra-ox/lambda-C-s) (22 . hydra-ox/lambda-C-v) (2 . hydra-ox/lambda-C-b) (kp-subtract . hydra--negative-argument) (kp-9 . hydra--digit-argument) (kp-8 . hydra--digit-argument) (kp-7 . hydra--digit-argument) (kp-6 . hydra--digit-argument) (kp-5 . hydra--digit-argument) (kp-4 . hydra--digit-argument) (kp-3 . hydra--digit-argument) (kp-2 . hydra--digit-argument) (kp-1 . hydra--digit-argument) (kp-0 . hydra--digit-argument) (57 . hydra--digit-argument) (56 . hydra--digit-argument) (55 . hydra--digit-argument) (54 . hydra--digit-argument) (53 . hydra--digit-argument) (52 . hydra--digit-argument) (51 . hydra--digit-argument) (50 . hydra--digit-argument) (49 . hydra--digit-argument) (48 . hydra--digit-argument) (45 . hydra--negative-argument) (21 . hydra--universal-argument)) (lambda (#1#) (defvar hydra-ox/hint #1# "Dynamic hint for hydra-ox.")) (format #("%s Body only:    % -15S %s Visible only:     %S\n%s Export scope: % -15S %s Force publishing: %S\n%s Async export: %S\n\n[h]: Export to HTML, [l]: Export to LaTeX, [t]: Export to Plain Text, [q]: quit." 118 119 (face hydra-face-blue) 139 140 (face hydra-face-blue) 161 162 (face hydra-face-blue) 188 189 (face hydra-face-blue)) #("C-b" 0 3 (face hydra-face-red)) hydra-ox/body-only #("C-v" 0 3 (face hydra-face-red)) hydra-ox/visible-only #("C-s" 0 3 (face hydra-face-red)) hydra-ox/export-scope #("C-f" 0 3 (face hydra-face-red)) hydra-ox/force-publishing #("C-a" 0 3 (face hydra-face-red)) hydra-ox/async-export)] 2)
+#@443 Call the head `(hydra-ox/body-only)' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/lambda-C-b #[nil "\305\306!\210\307 \210\310\311 \210\312)\3131\314\315!0\202!\316\317\n!!)\210\320\321\"\210\322\f\323\324#\207" [hydra--ignore hydra-curr-body-fn err hydra-ox/hint hydra-ox/keymap require hydra hydra-default-pre t hydra-keyboard-quit hydra-ox/body (quit error) hydra--call-interactively-remap-maybe #[nil "\300 \207" [hydra-ox/body-only] 1 nil nil] message error-message-string hydra-show-hint hydra-ox hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1] nil] 4 (#$ . 32655) nil])
+#@446 Call the head `(hydra-ox/visible-only)' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/lambda-C-v #[nil "\305\306!\210\307 \210\310\311 \210\312)\3131\314\315!0\202!\316\317\n!!)\210\320\321\"\210\322\f\323\324#\207" [hydra--ignore hydra-curr-body-fn err hydra-ox/hint hydra-ox/keymap require hydra hydra-default-pre t hydra-keyboard-quit hydra-ox/body (quit error) hydra--call-interactively-remap-maybe #[nil "\300 \207" [hydra-ox/visible-only] 1 nil nil] message error-message-string hydra-show-hint hydra-ox hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1] nil] 4 (#$ . 33657) nil])
+#@446 Call the head `(hydra-ox/export-scope)' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/lambda-C-s #[nil "\305\306!\210\307 \210\310\311 \210\312)\3131\314\315!0\202!\316\317\n!!)\210\320\321\"\210\322\f\323\324#\207" [hydra--ignore hydra-curr-body-fn err hydra-ox/hint hydra-ox/keymap require hydra hydra-default-pre t hydra-keyboard-quit hydra-ox/body (quit error) hydra--call-interactively-remap-maybe #[nil "\300 \207" [hydra-ox/export-scope] 1 nil nil] message error-message-string hydra-show-hint hydra-ox hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1] nil] 4 (#$ . 34665) nil])
+#@450 Call the head `(hydra-ox/force-publishing)' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/lambda-C-f #[nil "\305\306!\210\307 \210\310\311 \210\312)\3131\314\315!0\202!\316\317\n!!)\210\320\321\"\210\322\f\323\324#\207" [hydra--ignore hydra-curr-body-fn err hydra-ox/hint hydra-ox/keymap require hydra hydra-default-pre t hydra-keyboard-quit hydra-ox/body (quit error) hydra--call-interactively-remap-maybe #[nil "\300 \207" [hydra-ox/force-publishing] 1 nil nil] message error-message-string hydra-show-hint hydra-ox hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1] nil] 4 (#$ . 35673) nil])
+#@446 Call the head `(hydra-ox/async-export)' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/lambda-C-a #[nil "\305\306!\210\307 \210\310\311 \210\312)\3131\314\315!0\202!\316\317\n!!)\210\320\321\"\210\322\f\323\324#\207" [hydra--ignore hydra-curr-body-fn err hydra-ox/hint hydra-ox/keymap require hydra hydra-default-pre t hydra-keyboard-quit hydra-ox/body (quit error) hydra--call-interactively-remap-maybe #[nil "\300 \207" [hydra-ox/async-export] 1 nil nil] message error-message-string hydra-show-hint hydra-ox hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1] nil] 4 (#$ . 36689) nil])
+#@441 Call the head `hydra-ox-html/body' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/hydra-ox-html/body-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox/body hydra-ox-html/body hydra--call-interactively-remap-maybe] 2 (#$ . 37697) nil])
+#@442 Call the head `hydra-ox-latex/body' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/hydra-ox-latex/body-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox/body hydra-ox-latex/body hydra--call-interactively-remap-maybe] 2 (#$ . 38433) nil])
+#@441 Call the head `hydra-ox-text/body' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/hydra-ox-text/body-and-exit #[nil "\302\303!\210\304 \210\305 \210\306\307\310\307!\207" [hydra-curr-body-fn this-command require hydra hydra-default-pre hydra-keyboard-quit hydra-ox/body hydra-ox-text/body hydra--call-interactively-remap-maybe] 2 (#$ . 39172) nil])
+#@426 Call the head `nil' in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/nil #[nil "\301\302!\210\303 \210\304 \210\305\211\207" [hydra-curr-body-fn require hydra hydra-default-pre hydra-keyboard-quit hydra-ox/body] 2 (#$ . 39908) nil])
+#@420 Call the body in the "hydra-ox" hydra.
+
+The heads for the associated hydra are:
+
+"C-b":    `(hydra-ox/body-only)',
+"C-v":    `(hydra-ox/visible-only)',
+"C-s":    `(hydra-ox/export-scope)',
+"C-f":    `(hydra-ox/force-publishing)',
+"C-a":    `(hydra-ox/async-export)',
+"h":    `hydra-ox-html/body',
+"l":    `hydra-ox-latex/body',
+"t":    `hydra-ox-text/body',
+"q":    `nil'
+
+The body can be accessed via `hydra-ox/body'.
+(defalias 'hydra-ox/body #[nil "\306\307!\210\310 \210\311\312 \210\313)\314\n\315\"\210\316\317\311#\210\f\211\207" [hydra--ignore hydra-curr-body-fn hydra-ox/hint hydra-ox/keymap current-prefix-arg prefix-arg require hydra hydra-default-pre nil hydra-keyboard-quit hydra-ox/body hydra-show-hint hydra-ox hydra-set-transient-map #[nil "\300 \210\301\207" [hydra-keyboard-quit nil] 1]] 4 (#$ . 40525) nil])
+(byte-code "\301\302\303#\210\304\305!\207" [org-mode-map define-key [3 67108908] hydra-ox/body provide hydra-ox] 4)
